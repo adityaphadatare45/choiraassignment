@@ -32,6 +32,8 @@ class QuizProvider with ChangeNotifier {
 
   bool get finished => _index == _questions.length - 1 && _lastCorrect != null;
 
+  Object? get selectedIndex => null;
+
   void reset() {
     _index = 0;
     _score = 0;
